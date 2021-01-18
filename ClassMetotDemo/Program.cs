@@ -39,16 +39,19 @@ namespace ClassMetotDemo
                 int tus = Convert.ToInt16(Console.ReadLine());
                 if (tus == 1)
                 {
+                    Console.WriteLine("--------Müşteri Ekleme-------------");
                     manager.Ekle(musteri);
                 }
                 if (tus == 2)
                 {
+                    Console.WriteLine("--------Müşteri Silme-------------");
                     Console.WriteLine("Silmek istediğiniz müşteri Id giriniz: ");
                     int Id = Convert.ToInt16(Console.ReadLine());
                     manager.Sil(musteriler, Id);
                 }
                 if (tus == 3)
                 {
+                    Console.WriteLine("--------Müşterileri Listeleme-------------");
                     manager.Listele(musteriler);
                 }
             }

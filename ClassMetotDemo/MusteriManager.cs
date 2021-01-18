@@ -32,7 +32,8 @@ namespace ClassMetotDemo
                     break;
                 }
             }
-         }
+            Console.WriteLine("Girilen Id bulunamadı!");
+        }
         public void Listele(Musteri[] musteriler)
         {
             foreach (var musteri in musteriler)
@@ -44,6 +45,7 @@ namespace ClassMetotDemo
                     Console.WriteLine("Müşteri Soyadı: " + musteri.musteriSoyadi);
                     Console.WriteLine("Müşteri Doğum Yeri: " + musteri.musteriDogumYeri);
                     Console.WriteLine("Müşteri Eğitimi: " + musteri.musteriEgitimi);
+                    Console.WriteLine("-----------------");
                 }
                 
             }

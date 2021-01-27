@@ -6,6 +6,7 @@ namespace KampIntro
     {
         static void Main(string[] args)
         {
+            
             string kategoriEtiketi = "Kategoriler";
             int ogrenciSayisi = 15000;
             double faizOranı = 1.54;
@@ -13,17 +14,17 @@ namespace KampIntro
             double dolarDun = 7.35;
             double dolarBugun = 7.45;
 
-            if (dolarBugun>dolarDun)
+            if (dolarBugun > dolarDun)
             {
                 Console.WriteLine("dolar yükseldi");
             }
-            else if (dolarBugun<dolarDun)
+            else if (dolarBugun < dolarDun)
             {
                 Console.WriteLine("dolar düştü");
             }
             else
             {
-                Console.WriteLine("dolar aynı kaldı");    
+                Console.WriteLine("dolar aynı kaldı");
             }
 
             if (sistemeGirisYapmisMi == true)
@@ -36,5 +37,6 @@ namespace KampIntro
             }
             Console.WriteLine(ogrenciSayisi);
         }
+        
     }
 }
